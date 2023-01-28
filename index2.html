@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Door is open</title>
+
+</head>
+<body id="body-two">
+
+  <!--This part is for the nav on the top of the page -->
+     <nav class="nav-dark">
+        <div class="container">
+          <h1>Rodolfo Torres</h1>
+            
+         <div class="menu">
+            <a href="./index.html" class="is-active">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>              
+            <a href="https://www.linkedin.com/in/rodolfo-torres-gonzalez-9997a7209/">Contact</a>
+         </div>
+
+           <button class="startbutton">
+              <span></span>
+              <span></span>
+              <span></span>
+           </button> 
+    </nav>    
+ <!--This part is for the end of the nav  -->
+         
+          
+           
+  <!--This part is Profile user picture my pic  -->  
+           <div class="user hide-details" id="userBox">
+              <img src="./images/Rodolfo pic .jpeg" onclick="openinfo()">
+              <div class="info">
+                <h2>Rodolf Torres</h2>
+                <p><em><strong>5 years experience in Sales and customer services, </p>
+                <p>Fully Bilinugal English/Spanish native speaking</p>
+                <p>Started working on my first project with <span><strong>HTML, CSS and JavaScript</strong></span></p>
+                <p>From: Chihuahua,Mexico</strong></em></p>
+                <a href="https://www.linkedin.com/in/rodolfo-torres-gonzalez-9997a7209/">Linked Profile</a>
+              </div>
+              <div class="close-icon" onclick="closeinfo()"></div>
+                
+              
+            </div>
+            <!--This part is to add function of hidding the tex behind the picture  -->  
+             <script>
+              
+             let userBox = document.getElementById("userBox");
+
+             function openinfo(){
+              userBox.classList.remove("hide-details");
+            }
+            function closeinfo(){
+              userBox.classList.add("hide-details");
+            }
+            
+            </script>
+
+  <!--This part is for about me   -->  
+    <div class="wrapper">
+      <div class="testimonial">
+        <article>
+          <h3>About Me</h3>
+          <img src="./images/connect icon.png">
+          <blockquote>
+          <strong>I have been working as a sales agent for eight years.<br>
+          My passion for web development and technology has <br>
+          led me to focus on learning front-end and back-end web development,<br> 
+          specifically HTML, CSS and JavaScript, with the goal of creating outstanding websites.</strong>
+          </blockquote>
+          <h4>Commitment</h4>
+          <p>I am driven by a passion for web development and technology,<br> 
+          constantly seeking to improve my skills in front-end development<br>
+          and create visually stunning and user-friendly websites.
+           </p>
+        </article>
+      </div>
+   </div>  
+
+
+
+      <script src="script.js"></script>
+</body>
+</html>
